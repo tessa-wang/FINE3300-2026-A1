@@ -1,0 +1,29 @@
+
+
+class ExchangeRates:
+    def __init__(self, filename):
+
+        f = open(filename, "r")
+        #opens and reads the file 
+
+        data = f.read()
+        #returns contents of file in single string
+
+        rows = data.split("\n")
+        #split into rows
+
+        rows = [row.split(",") for row in rows]
+        #splits each row into columns 
+
+        if rows and rows[-1] == [""]:
+            rows.pop()  
+        #removes final row if empty
+
+        print(rows[0])
+        #shows results
+
+        f.close()
+        #closes file
+
+        
+        
