@@ -1,22 +1,21 @@
 # FINE3300-2026-A1
-FINE 3300, Fall Semester 2026, Assignment 1
+### Description
+- FINE 3300, Fall Semester 2026, Assignment 1
+- Created an exchange rate calculator (python.py) and compared it with a vibe coded version (ExchangeRatesAI.py)
+### Tessa Wang's Write-Up
 
-Created an exchange rate calculator (python.py) and compared it with a vibe coded version (ExchangeRatesAI.py)
 
-<u>Tessa Wang's Write-Up</u>
-
-
-(a) provide the link to your GitHub repository. 
+**(a) provide the link to your GitHub repository.**
 
 https://github.com/tessa-wang/FINE3300-2026-A1.git
 
-(b) paste the output from your program for $100,000 USD to CAD, and vice versa. 
+**(b) paste the output from your program for $100,000 USD to CAD, and vice versa.**
 
 $100,000 USD to CAD output:  Your amount would be equal to $139,780.00 CAD
 
 $100,000 CAD to USD output:  Your amount would be equal to $71,540.99 USD
 
-(c) list the LLM model that you used for part 2 along with all the prompts given to the LLM model. 
+**(c) list the LLM model that you used for part 2 along with all the prompts given to the LLM model.**
 
 I prompted Claude Sonnet 5.5 with the following: 
 
@@ -33,7 +32,7 @@ Part 2: Vibe Coding Vibe Coding is where you use a Large Language Model (LLM) to
 
 “There was an error message: ValueError: Could not find a USD/CAD column in the file. Rewrite and the header is (FXAUSDCAD).”
 
-(d) include the comparison of your code and the LLM code.
+**(d) include the comparison of your code and the LLM code.**
 
 My code and the LLM code differed in many ways. The model I used was Claude Sonnet 5.5. The major differences I noticed were the type of functions being called and the amount of if else statements used. I didn’t account for the possibility that the user would input something my code couldn’t understand, so I didn’t have if statements that would say something along the lines of “invalid, please try again.” This is something the LLM did, using while loops, try and except, and break.
 
