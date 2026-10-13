@@ -54,7 +54,7 @@ class ExchangeRates:
 rates = ExchangeRates(file_name)
 #creates an object from the class above 
 
-print("your amount would be equal to $", rates.convert(amount, from_currency, to_currency,))
-#prints rate that object saved
+print(f"your amount would be equal to ${rates.convert(amount, from_currency, to_currency,):.2f} {to_currency}")
+#prints the converted amount. Using an f-string so python can insert the values for amount and to currency
 
 
