@@ -2,7 +2,7 @@
 
 ### Description
 - FINE 3300, Fall Semester 2026, Assignment 1
-- A USD ⇄ CAD exchange rate calculator that reads the latest USD/CAD rate (the `FXAUSDCAD` column, last row) from the Bank of Canada exchange rate file.
+- A USD and CAD exchange rate calculator that reads the latest USD/CAD rate (the `FXAUSDCAD` column, last row) from the Bank of Canada exchange rate file.
 - `ExchangeRates.py` is my own version; `ExchangeRatesAI.py` is the vibe coded version written by Claude Sonnet 5.5, for comparison.
 
 ### Files
