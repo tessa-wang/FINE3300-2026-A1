@@ -1,5 +1,7 @@
 # Import Python's built-in csv module, which provides tools for reading CSV data (this is not your file)
 import csv
+# Import Path so the CSV can be found relative to this file instead of a hard-coded folder
+from pathlib import Path
 
 
 # Define a class called ExchangeRates that reads the exchange rate file and does the conversions
@@ -95,8 +97,8 @@ class ExchangeRates:
 
 # Define the main function that handles the user interaction
 def main():
-    # Path to the exchange rate file on this computer
-    file_path = "/Users/tessawang/Documents/FINE 3300/BankOfCanadaExchangeRate.2026.csv"
+    # Path to the exchange rate file: the same folder as this .py file, so it works on any computer
+    file_path = Path(__file__).parent / "BankOfCanadaExchangeRate.2026.csv"
 
     # Create an ExchangeRates object, which reads the latest rate from the file
     rates = ExchangeRates(file_path)
