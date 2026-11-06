@@ -8,7 +8,7 @@ print(from_currency)
 to_currency = input ("What currency are you converting to (USD or CAD)? ")
 print(to_currency)
 
-file_name = "/Users/tessawang/Documents/FINE 3300/BankOfCanadaExchangeRate.2026.csv"
+file_name = "BankOfCanadaExchangeRate.2026.csv"
 #variable called file_name storing the location of the csv
 
 class ExchangeRates:
